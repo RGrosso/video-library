@@ -29,6 +29,10 @@ class Movies extends Component {
         this.setState({ movies });
     };
 
+    testLog() {
+        console.log("Test");
+    }
+
     handleSave = (movie) => {
         const movies = { movie, ...movies };
         this.setState({ movies });
@@ -85,8 +89,8 @@ class Movies extends Component {
                     />
                 </div>
                 <div className="col">
-                    <Link to="/movies/new">
-                        <button className="btn btn-primary">New Movie</button>
+                    <Link to="/movies/new" className="btn btn-primary">
+                        New Movie
                     </Link>
 
                     <p>Showing {totalCount} movies in the database.</p>

@@ -75,6 +75,7 @@ export default class Form extends Component {
             />
         );
     }
+
     renderSelect(name, label, options) {
         const { data, errors } = this.state;
         return (
